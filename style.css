@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.windows-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.add-window-window {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex: 1;
+}
+
+.show-add-window {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 25px;
+  font-size: 2rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+
+.add-window {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 150px;
+  width: 270px;
+  padding: 20px;
+  row-gap: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.add-window-request {
+  font-size: 0.9rem;
+}
+
+.add-window-input {
+  font-size: 1rem;
+  height: 40px;
+  padding: 3px 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.add-window-btn {
+  height: 40px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.example-window {
+  width: 300px;
+  height: 100vh;
+  border-right: 2px solid black;
+  overflow-y: auto;
+}
+
+.new-win-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10px;
+  position: relative;
+}
+
+.settings-window {
+  position: absolute;
+  top: 30px;
+  right: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100px;
+  height: 48px;
+  display: flex;
+  flex-flow: column;
+  /* justify-content: space-evenly; */
+  background-color: white;
+  z-index: 1;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding: 20px 5px;
+  position: relative;
+}
+
+.upvotes {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  margin-right: 20px;
+}
+
+.upvotes-icon {
+  font-size: 1.2rem;
+}
+
+.author {
+  position: absolute;
+  font-size: 0.7rem;
+  bottom: 0;
+  right: 2px;
+}
+
+.hidden {
+  display: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.sublist-settings-btn:hover,
+button:hover {
+  cursor: pointer;
+}
+
+.settings-window > div:first-child {
+  padding-left: 10px;
+  padding-bottom: 2px;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.settings-window > div:last-child {
+  padding-left: 10px;
+  padding-bottom: 2px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.settings-window > div:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.settings-window > div::selection {
+  background: none;
+}
